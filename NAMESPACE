@@ -1,0 +1,7 @@
+export(aucnull_test)
+export(smooth_auc)
+export(mrc_fit)
+export(delong_test)
+export(pweightedchisq)
+S3method(print, aucnull_test)
+importFrom(stats, pnorm, dnorm, pchisq, optim, var, cov, sd, glm, binomial, logLik, rnorm, coef, predict, complete.cases, model.matrix, fitted, vcov, quantile)

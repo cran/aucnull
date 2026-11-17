@@ -1,0 +1,28 @@
+Package: aucnull
+Type: Package
+Title: Heller Test of Equal AUCs for a New Marker in Nested Models
+Version: 0.2.2
+Authors@R: person("Satoshi", "Nakamura", email = "s-nakamura@med.mie-u.ac.jp", role = c("aut", "cre"))
+Description: Tests whether new markers improve the area under the receiver operating
+    characteristic curve beyond established markers in nested models, using the maximum rank
+    correlation estimator and the weighted chi-square null distribution of Heller, Seshan,
+    Moskowitz and Gonen (2017) <doi:10.1093/biostatistics/kxw045>. The weights are estimated
+    from the bootstrap covariance of the rank correlation estimate (or from a sandwich formula)
+    and the curvature of the kernel smoothed area. The null hypothesis is that the best linear
+    ordering of subjects does not use the new markers, and the test keeps its asymptotic level
+    under any strictly increasing link. Clustered observations are handled by a cluster
+    bootstrap. The likelihood ratio test, Wald tests with a robust covariance and the DeLong
+    test are computed alongside for comparison.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: stats
+Suggests: testthat (>= 3.0.0), pROC, MASS, survival, mlbench
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-11-05 03:56:30 UTC; nakamura
+Author: Satoshi Nakamura [aut, cre]
+Maintainer: Satoshi Nakamura <s-nakamura@med.mie-u.ac.jp>
+Repository: CRAN
+Date/Publication: 2026-11-17 19:10:02 UTC
